@@ -1,0 +1,17 @@
+//elabora un programa en el que utilices el ciclo for o while para encontrar la suma de una serie,
+//el codigo se detendra cuando el resultado de la suma sea menor o igual a 100
+
+const listaDeNumeros = [5, 10, 15, 20, 60, 5];
+
+function sumatoria() {
+  let suma = 0;
+  
+  for (let i = 0; i < listaDeNumeros.length; i++) {
+    suma += listaDeNumeros[i];
+    if (suma >= 100) {
+      break;
+    }
+  }
+  return suma;
+}
+console.log(sumatoria());
